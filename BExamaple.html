@@ -1,0 +1,95 @@
+<!Doctype>
+<html>
+	<head>
+		<title>Login Form.</title>
+<style>
+body{
+	background: url(https://source.unsplash.com/1920x2400?hdr,sunset,ocean);
+	padding : 50px;
+	backdrop-filter: blur(10px);			
+}
+.main{
+	text-align:center;
+	padding: 35px 20px;
+	border : 5px outset #F8C471 ;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	border: 2px solid rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);		
+}			
+button{
+	width: 10%;
+	background-color: #ffffff;
+	color: #080710;
+	padding: 10px 0;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;				
+}
+.logo-img{
+   width:30%;
+    height:30%;
+    margin:auto auto;
+	border-radius:10px;
+	box-shadow:0 0 40px rgba(8, 7, 16, 0.6);
+}
+input{
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 600;
+}
+</style>
+		
+	<script>
+
+	function loginFuntion(){
+		var strText = document.getElementById("one").value;
+		var strText1 = document.getElementById("two").value;
+		var result = strText;
+		var result1 = strText1;
+	
+		const usr = "xyz";
+		const pwd = "xyz@123";
+		if(strText == usr && strText1 == pwd){
+				window.location.replace("Rating.html");  
+			/*
+				document.getElementById('spanresult').innerHTML = "UserName : "+result;
+				document.getElementById('spanresult1').innerHTML = "Password : "+result1;
+				document.getElementById('spanresult2').innerHTML = "Login Successful.";
+			*/
+		}else{
+				document.getElementById('spanresult').innerHTML = "UserName : "+usr;
+				document.getElementById('spanresult1').innerHTML = "Password : "+pwd;
+				document.getElementById('spanresult2').innerHTML = "Login Fail...! Try Again.";
+			}
+
+	}
+		
+		</script>
+	</head>
+	<div class="image">
+	
+	
+	</div>
+		<div class = "main">
+		<div style="margin:50px;">
+			<img class="logo-img" src="LOGO.png" width="120" height="60" ALT="align box" ALIGN=left><br><br>
+			<br><br>
+			</div>
+			<div style="margin-left:50px; text-align:rightwards;">
+			<h1 style="margin-right:300px;">LOGIN-FORM</h1> 
+			<label>USERNAME : </label>
+			<input id = "one" type="text" required><br><br>
+			<label>PASSWORD : </label>
+			<input id="two" type="password" required><br><br>
+			<button id = "btn" onclick="loginFuntion()">Submit</button><br><br>
+			<span id ="spanresult"></span><br>
+			<span id ="spanresult1"></span><br>
+			<span id = "spanresult2"</span>
+			</div>
+		</div>
+	<body>
+	<h1></h1>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+	background: url(https://source.unsplash.com/1920x2400?hdr,sunset,ocean);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*
+	background-image : url("https://media.istockphoto.com/photos/white-abstract-defocused-background-with-frame-picture-id1144862307?k=20&m=1144862307&s=612x612&w=0&h=Z-ZjXbVTJ9O2LB1wVoJk946Ua3XhgtZT6wL2lQLKZU8=");
+	padding: 10%;
+	backdrop-filter: blur(10px);*/
+}
+form {
+  height: 550px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.03);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+form * {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+/*
+.container{
+	padding-left:50px;
+}
+fieldset {
+    border: thin solid #ccc; 
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 40px;
+    background: #fbfbfb;
+}
+legend {
+   color: #678;
+}
+.form-control {
+    width: 95%;
+}
+*/
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+input {
+  display: block;
+  height: 30px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+::placeholder {
+  color: black;
+}
+
+input:hover{
+  outline: 2px solid #0001;
+}
+button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+span.req {
+    color:red;
+    font-size: 112%;
+}
